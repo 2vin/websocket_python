@@ -7,9 +7,9 @@ import websockets
 import json
 
 async def hello():
-    uri = "ws://localhost:8765"
+    uri = "ws://192.168.1.69:8765"
     async with websockets.connect(uri) as websocket:
-    	person = '{"color": "#FF0000"}'
+    	person = '{"qrAuth": { "value": "shoe-1"} }'
 
     	name = json.loads(person)
 
